@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --header-color: green ;
+        }
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
         body{
             background: #f9fafc;
             /* #ffffff - fondoHeader */
@@ -31,14 +38,32 @@
         .level-2{
             grid-row-end: span 1;
         }
+        header{
+            background-color: var(--header-color);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 400px);
+            align-items: center;
+        }
+
         p{
             color: #636368;
         }
+
     </style>
 </head>
 <body>
     <header class="header">
-        
+        Deck.
+        <ul class="nav">
+            <li class="nav__item">TECNOLOGY</li>
+            <li class="nav__item">IDEAS</li>
+            <li class="nav__item">LEADERSHIP</li>
+            <li class="nav__item">VIDEO</li>
+            <li class="nav__item">NEW</li>
+            <li class="nav__item">FINANCE</li>
+            <li class="nav__item">ENTERTAIMENT</li> 
+        </ul>
+       
     </header>
     <section class="container">
         <div class="post__card level-1">
